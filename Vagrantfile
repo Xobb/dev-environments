@@ -54,5 +54,6 @@ Vagrant.configure("2") do |config|
         config.vm.provision :shell, path: "ansible/windows.sh", args: ["default"]
     end
 
+    # Edit this line, put the relative path to the project you want to develop.
     config.vm.synced_folder "./", "/vagrant", type: "nfs"
 end
